@@ -8,8 +8,7 @@ export const ROUTES: Routes = [
     path: '',
     component: ChartComponent,
     children: [
-      //   { path: ‘profile‘, component: ProfileSettingsComponent },
-      //   { path: ‘password‘, component: PasswordSettingsComponent }
+
     ]
   }
 ];

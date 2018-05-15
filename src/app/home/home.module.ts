@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChartComponent } from './chart.component';
-import { ChartRouteModule } from './chart.router.module';
+
 import { NgZorroAntdModule } from 'ng-zorro-antd/src/ng-zorro-antd.module';
+import { AnalysisComponent } from './analysis/analysis.component';
 
 
 @NgModule({
-  declarations: [ChartComponent],
+  declarations: [AnalysisComponent],
   imports: [
     CommonModule,
-    ChartRouteModule,
+   
   ],
 
 })
-export class ChartModule { }
+export class HomeModule { }
