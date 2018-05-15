@@ -11,7 +11,9 @@ import { CartoontodayComponent } from './cartoontoday/cartoontoday.component';
 import { appRouting } from './app.router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import {NgZorroAntdModule} from 'ng-zorro-antd';
+import { NgZorroAntdModule} from 'ng-zorro-antd';
+
+
 
 
 @NgModule({
@@ -29,7 +31,6 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
     HttpClientModule,
     BrowserAnimationsModule,
     appRouting,
-
     NgZorroAntdModule.forRoot()
   ],
   providers: [
@@ -37,7 +38,6 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
     FormBuilder,
     homeService
   ],
-  exports: [NgZorroAntdModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
