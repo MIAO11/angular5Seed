@@ -1,6 +1,6 @@
 ##在线演示
 
- [demo](https://miao11.github.io/angular5NgzorroDemo/.)   
+ [demo](https://miao11.github.io/angular5NgzorroDemo/#/home)   
 
 # NewNgzorro
 
