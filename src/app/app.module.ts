@@ -12,6 +12,7 @@ import { appRouting } from './app.router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NgZorroAntdModule} from 'ng-zorro-antd';
+import {HashLocationStrategy , LocationStrategy} from '@angular/common';  
 
 
 
@@ -34,6 +35,7 @@ import { NgZorroAntdModule} from 'ng-zorro-antd';
     NgZorroAntdModule.forRoot()
   ],
   providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
     HttpService,
     FormBuilder,
     homeService
