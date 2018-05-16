@@ -1,3 +1,41 @@
-<p>
-  analysis works!
-</p>
+<div>
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32, xl: 32, xxl: 32 }">
+
+        <div nz-col [nzSpan]="12" [nzMd]=6>
+            <div class="headmenu">
+                <p>销售总额</p>
+                <h2>12345</h2>
+                <p>周同比12%</p>
+            </div>
+        </div>
+        <div nz-col [nzSpan]="12" [nzMd]=6>
+            <div class="headmenu">
+                <p>访问量</p>
+                <h2>1232335</h2>
+                <p>日访问量：123456</p>
+            </div>
+        </div>
+        <div nz-col [nzSpan]="12" [nzMd]=6>
+            <div class="headmenu">
+                <p>支付笔数</p>
+                <h2>1232335</h2>
+                <p>日访问量：123456</p>
+            </div>
+        </div>
+        <div nz-col [nzSpan]="12" [nzMd]=6>
+            <div class="headmenu">
+                <p>运营活动效果</p>
+                <h2>78%</h2>
+                <nz-slider [nzMin]="1" [nzMax]="100" [(ngModel)]="value1" ></nz-slider>
+            </div>
+        </div>
+    </div>
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32, xl: 32, xxl: 32 }">
+        <div nz-col  [nzMd]=12>
+                <div  echarts [options]="echartOption" class="echartsStyle"></div> 
+        </div>
+    </div>
+    
+   
+    <button nz-button [nzType]="'primary'" (click)="createBasicMessage()">弹出消息</button>
+</div>
